@@ -68,7 +68,7 @@ client.on("emojiCreate", (emoji) => {
 /* Emitted whenever a custom guild emoji is deleted.
 PARAMETER       TYPE                DESCRIPTION
 emoji           GuildEmoji          The emoji that was deleted */
-client.on("emojiCreate", (emoji) => {
+client.on("emojiDelete", (emoji) => {
     console.log(`${emoji} has been deleted in ${emoji.guild.name}`)
 })
 
