@@ -31,10 +31,8 @@ const client = new Client({
 
 ## Cheat-Sheet
 
-```js
 <details>
 <summary>How do I dropdown?</summary>
 <br>
 This is how you dropdown.
 </details>
-```
