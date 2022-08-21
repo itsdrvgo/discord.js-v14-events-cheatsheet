@@ -386,10 +386,10 @@ client.on("userUpdate", (oldUser, newUser) => {
 // voiceStateUpdate
 /* Emitted whenever a user changes voice state - e.g. joins/leaves a channel, mutes/unmutes.
 PARAMETER       TYPE                DESCRIPTION
-oldMember       GuildMember         The member before the voice state update
-newMember       GuildMember         The member after the voice state update */
-client.on("voiceStateUpdate", (oldMember, newMember) => {
-    console.log(`${newMember}'s voice state has been updated`)
+oldState        VoiceState          The voice state before the update
+newState        VoiceState          The voice state after the update */
+client.on("voiceStateUpdate", (oldState, newState) => {
+    console.log(`${newState.member}'s voice state has been updated`)
 })
 
 // warn
